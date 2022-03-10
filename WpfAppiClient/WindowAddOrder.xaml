@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfAppiClient.WindowAddOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppiClient"
+        mc:Ignorable="d"
+        Title="WindowAddOrder" Height="450" Width="800">
+    <Grid>
+        <Image  Source="Resourses/Fone.jpg"/>
+        <StackPanel Height="60" Width="300" VerticalAlignment="Top" Margin="60">
+            <TextBlock Height="40" Margin="10" FontFamily="Brush Script MT" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top">Adding orders</TextBlock>
+        </StackPanel>
+        <StackPanel Height="210" Width="250">
+            <TextBlock FlowDirection="LeftToRight"  HorizontalAlignment="Left" Height="30"  Width="90" FontSize="20" FontStyle="Oblique">Lat</TextBlock>
+            <TextBox  Name="TextBoxLat" Height="25" Width="200"></TextBox>
+            <TextBlock FlowDirection="LeftToRight"  HorizontalAlignment="Left" Height="30"  Width="90" FontSize="20" FontStyle="Oblique">Long</TextBlock>
+            <TextBox  Name="TextBoxLong" Height="25" Width="200"></TextBox>
+            <TextBlock FlowDirection="LeftToRight"  HorizontalAlignment="Left" Height="30"  Width="90" FontSize="20" FontStyle="Oblique">Coast</TextBlock>
+            <TextBox Name="TextBoxCoast" Height="25" Width="200"></TextBox>
+            <Button Name="ButtonAddOrder" Height="40" Width="200" Margin="5"  Background="BurlyWood" Click="ButtonAddOrder_Click" FontSize="20" FontStyle="Oblique">Add order</Button>
+        </StackPanel>
+    </Grid>
+</Window>

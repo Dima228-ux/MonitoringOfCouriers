@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resourses\f=JPEG.png" />
+    <None Remove="Resourses\Fone.jpg" />
+    <None Remove="Resourses\Fone2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GMap.Net.WPF" Version="1.0.0.1" />
+    <PackageReference Include="Microsoft.Maps.MapControl.WPF" Version="1.0.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
+    <ProjectReference Include="..\CommunicationEntities\CommunicationEntities.csproj" />
+    <ProjectReference Include="..\DbEntities\DbEntities.csproj" />
+    <ProjectReference Include="..\DbWorker\DbWorker.csproj" />
+    <ProjectReference Include="..\WebAppliServer\WebAppiServer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resourses\f=JPEG.png" />
+    <Resource Include="Resourses\Fone.jpg" />
+    <Resource Include="Resourses\Fone2.png" />
+  </ItemGroup>
+
+</Project>

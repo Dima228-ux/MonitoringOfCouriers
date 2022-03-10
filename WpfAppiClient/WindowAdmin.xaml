@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfAppiClient.WindowAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+        xmlns:local="clr-namespace:WpfAppiClient"
+        xmlns:gmaps="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <gmaps:GMapControl x:Name="gmap" Loaded="mapView_Loaded"  HorizontalAlignment="Left" Width="650"/>
+        <!--<TextBox Name="TextBoxLat" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10" Height="20" Width="130"></TextBox>
+        <TextBox Name="TextBoxLong" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 10 40" Height="20" Width="130"></TextBox>-->
+        <Button Name="ButtonMark" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 10 70" Height="20" Width="130" FontSize="15" Click="ButtonMark_Click">Метка</Button>
+        <Button Name="ButtonAddOrder" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 10 40" Height="20" Width="130" FontSize="15" Click="ButtonAddOrder_Click">Добавить заказ </Button>
+        <Button x:Name="ButtonRegistedNewUser" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 10 100" Height="20" Width="130" FontSize="15" Click="ButtonRegistedNewUser_Click" Content="Добавить пользователя"/>
+    </Grid>
+    
+</Window>
